@@ -8,10 +8,10 @@ html(lang="en")
 		link(rel="stylesheet", href="css/libs.min.css")
 		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.min.css")
 		link(rel="stylesheet", href="css/main.min.css")
-		link(rel="stylesheet", href="sass/style.sass")
+		link(rel="stylesheet", href="css/style.min.css")
+
 		script(src="js/libs.min.js")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js")
-		script(src="js/common.js")
 	body
 		div
 			div.container
@@ -28,12 +28,14 @@ html(lang="en")
 					div.rightSide
 						button.link SingIn
 						button.link Register
-				div.carousel
-					div.carouselIMG
-						div.swipe
-							p Для найвибагливіших клієнтів
-							h1 Нова версія Golf
-							button.swipeBtn Дізнатися більше
+				div.swiper-container
+					div.swiper-wrapper
+						div.swiper-slide slide1
+						div.swiper-slide slide2
+						div.swiper-slide slide3
+					div.swiper-pagination
+					div.swiper-button-next
+					div.swiper-button-prev
 				div.news
 					div
 						h1.newsTitle Актульне зі світу Volkswagen в Україні
@@ -64,3 +66,20 @@ html(lang="en")
 						h4 Підписуйтесь на новини!
 						button.swipeBtn Ваша скринька
 				div.footer
+
+	script(src="js/swiper.min.js")
+	script.
+		var swiper = new Swiper('.swiper-container', {
+			slidesPerView: 1,
+			spaceBetween: 30,
+			loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+

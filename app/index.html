@@ -9,10 +9,9 @@
     <link rel="stylesheet" href="css/libs.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.min.css"/>
     <link rel="stylesheet" href="css/main.min.css"/>
-    <link rel="stylesheet" href="sass/style.sass"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
     <script src="js/libs.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-    <script src="js/common.js"></script>
   </head>
   <body>
     <div>
@@ -32,14 +31,15 @@
             <button class="link">Register</button>
           </div>
         </div>
-        <div class="carousel">
-          <div class="carouselIMG">
-            <div class="swipe">
-              <p>Для найвибагливіших клієнтів</p>
-              <h1>Нова версія Golf</h1>
-              <button class="swipeBtn">Дізнатися більше</button>
-            </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">slide1</div>
+            <div class="swiper-slide">slide2</div>
+            <div class="swiper-slide">slide3</div>
           </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
         <div class="news">
           <div>
@@ -78,4 +78,20 @@
       </div>
     </div>
   </body>
+  <script src="js/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+    	slidesPerView: 1,
+    	spaceBetween: 30,
+    	loop: true,
+    	pagination: {
+    		el: '.swiper-pagination',
+    		clickable: true,
+    	},
+    	navigation: {
+    		nextEl: '.swiper-button-next',
+    		prevEl: '.swiper-button-prev',
+    	},
+    });
+  </script>
 </html>
