@@ -14,67 +14,66 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
   </head>
   <body>
-    <div>
+    <header>
+      <hr/>
       <div class="container">
-        <div class="header">
-          <hr/>
-          <div class="leftSide">
-            <button class="link">Головна</button>
-            <button class="link">Моделі</button>
-            <button class="link">Конфігуратор</button>
-            <button class="link">Акції</button>
-            <button class="link">Світ Volkswagen</button>
-          </div>
-          <div class="logo"><img/></div>
-          <div class="rightSide">
-            <button class="link">SingIn</button>
-            <button class="link">Register</button>
+        <div class="menu wrapper">
+          <ul class="menuBottom">
+            <li> <a class="link">Головна</a></li>
+            <li><a class="link">Моделі</a></li>
+            <li><a class="link">Конфігуратор</a></li>
+            <li><a class="link">Акції</a></li>
+            <li><a class="link">Світ Volkswagen</a></li>
+          </ul>
+          <div class="logo"><img src="img/logo.png"/></div>
+          <ul class="wrapper menuTop">
+            <li><a class="linkAuth">SingIn</a></li>
+            <li><a class="linkAuth">Register</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div style="background-image: url(img/swipe2.jpg)" class="swiper-slide">		
+          <div class="slide-inner container">
+            <p>Для найвибагливіших кліентів</p>
+            <h1>Найновіший Arteon</h1>
+            <button class="btnSwiper">	Дізнатися більше		</button>
           </div>
         </div>
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">slide1</div>
-            <div class="swiper-slide">slide2</div>
-            <div class="swiper-slide">slide3</div>
+        <div style="background-image: url(img/swipe1.jpg)" class="swiper-slide">
+          <div class="slide-inner container">
+            <p>Для самих самих</p>
+            <h1>Концепт Golf GTI</h1>
+            <button class="btnSwiper">	Дізнатися більше</button>
           </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
         </div>
+        <div style="background-image: url(img/swipe3.jpg)" class="swiper-slide">
+          <div class="slide-inner container">
+            <p>Вибір комфорту та елегантності</p>
+            <h1>Volkswagen Jetta</h1>
+            <button class="btnSwiper">	Дізнатися більше</button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <div class="news-container">
+      <div class="container">
         <div class="news">
-          <div>
-            <h1 class="newsTitle">Актульне зі світу Volkswagen в Україні</h1>
+          <div class="newsTitle">
+            <h1>Актульне зі світу Volkswagen в Україні</h1>
           </div>
-          <div class="newsItem">
-            <div class="item"><img/></div>
-            <div class="item"><img/></div>
-            <div class="item"><img/></div>
-            <div class="item"><img/></div>
-          </div>
-        </div>
-        <div class="confSelf">
-          <div>
-            <h1 class="newsTitle">Створіть власне авто у нашому конфігураторі</h1>
-          </div>
-          <div class="customItem">
-            <div><img/>
-              <button class="link">Моделі Jetta</button>
-            </div>
-            <div><img/>
-              <button class="link">Моделі Arteon</button>
-            </div>
+          <div class="newsItem wrapper">
+            <div class="item"><img src="img/new1.jpg"/></div>
+            <div class="item"><img src="img/new2.jpg"/></div>
+            <div class="item"><img src="img/new3.jpg"/></div>
+            <div class="item"><img src="img/new4.jpg"/></div>
           </div>
         </div>
-        <div class="mail">
-          <div>
-            <h2>Дізнавайтеся про головне</h2>
-            <p>Ви зацікавилися новинами з світу Volkswagen?</p>
-            <p>Хочите дізнатися про нові моделі та знижки?</p>
-            <h4>Підписуйтесь на новини!</h4>
-            <button class="swipeBtn">Ваша скринька</button>
-          </div>
-        </div>
-        <div class="footer"></div>
       </div>
     </div>
   </body>

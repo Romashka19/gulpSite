@@ -13,60 +13,71 @@ html(lang="en")
 		script(src="js/libs.min.js")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js")
 	body
-		div
+		header
+			hr
 			div.container
-				div.header
-					hr
-					div.leftSide
-						button.link Головна
-						button.link Моделі
-						button.link Конфігуратор
-						button.link Акції
-						button.link Світ Volkswagen
+				div.menu.wrapper
+					ul.menuBottom
+						li 
+							a.link Головна
+						li
+							a.link Моделі
+						li
+							a.link Конфігуратор
+						li
+							a.link Акції
+						li
+							a.link Світ Volkswagen
+								
 					div.logo
-						img
-					div.rightSide
-						button.link SingIn
-						button.link Register
-				div.swiper-container
-					div.swiper-wrapper
-						div.swiper-slide slide1
-						div.swiper-slide slide2
-						div.swiper-slide slide3
-					div.swiper-pagination
-					div.swiper-button-next
-					div.swiper-button-prev
+						img(src="img/logo.png")
+							
+					ul.wrapper.menuTop
+						li
+							a.linkAuth SingIn
+						li
+							a.linkAuth Register
+							
+		div.swiper-container
+			div.swiper-wrapper
+				div.swiper-slide(style="background-image: url(img/swipe2.jpg)")		
+					div.slide-inner.container
+						p Для найвибагливіших кліентів
+						h1 Найновіший Arteon
+						button.btnSwiper	Дізнатися більше		
+				div.swiper-slide(style="background-image: url(img/swipe1.jpg)")
+					div.slide-inner.container
+						p Для самих самих
+						h1 Концепт Golf GTI
+						button.btnSwiper	Дізнатися більше
+				div.swiper-slide(style="background-image: url(img/swipe3.jpg)")
+					div.slide-inner.container
+						p Вибір комфорту та елегантності
+						h1 Volkswagen Jetta
+						button.btnSwiper	Дізнатися більше
+			div.swiper-pagination
+			div.swiper-button-next
+			div.swiper-button-prev
+			
+			
+		div.news-container
+			div.container
 				div.news
-					div
-						h1.newsTitle Актульне зі світу Volkswagen в Україні
-					div.newsItem
+					div.newsTitle
+						h1 Актульне зі світу Volkswagen в Україні
+					div.newsItem.wrapper
 						div.item
-							img
+							img(src="img/new1.jpg")
 						div.item
-							img
+							img(src="img/new2.jpg")
 						div.item
-							img
+							img(src="img/new3.jpg")
 						div.item
-							img
-				div.confSelf
-					div
-						h1.newsTitle Створіть власне авто у нашому конфігураторі
-					div.customItem
-						div
-							img
-							button.link Моделі Jetta
-						div
-							img
-							button.link Моделі Arteon
-				div.mail
-					div
-						h2 Дізнавайтеся про головне
-						p Ви зацікавилися новинами з світу Volkswagen?
-						p Хочите дізнатися про нові моделі та знижки?
-						h4 Підписуйтесь на новини!
-						button.swipeBtn Ваша скринька
-				div.footer
-
+							img(src="img/new4.jpg")
+		
+	
+							
+			
 	script(src="js/swiper.min.js")
 	script.
 		var swiper = new Swiper('.swiper-container', {
