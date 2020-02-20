@@ -30,22 +30,18 @@ html(lang="en")
 						li
 							a.link Акції
 						li
-							a.link Світ Volkswagen
+							a.link.B Volkswagen
 
 					div.logo
 						img(src="img/logo.png")
 
-					ul.wrapper.menuTop
+					ul.menuTop
 						li
 							a.linkAuth SingIn
 						li
 							a.linkAuth Register
 
-
-
-
-
-							
+			
 		div.swiper-container
 			div.swiper-wrapper
 				div.swiper-slide(style="background-image: url(img/swipe2.jpg)")		
@@ -71,20 +67,63 @@ html(lang="en")
 		div.news-container
 			div.container
 				div.news
-					div.newsTitle
+					div.blockTitle
 						h1 Актульне зі світу Volkswagen в Україні
 					div.newsItem.wrapper
-						div.item
-							img(src="img/new1.jpg")
-						div.item
-							img(src="img/new2.jpg")
-						div.item
-							img(src="img/new3.jpg")
-						div.item
-							img(src="img/new4.jpg")
+						div.item(style="background-image: url(img/new1.jpg)")
+						div.item(style="background-image: url(img/new2.jpg)")
+						div.item(style="background-image: url(img/new3.jpg)")
+						div.item(style="background-image: url(img/new4.jpg)")
 		
-	
+		div.custom-container
+			div.container
+				div.custom
+					div.blockTitle
+						h1 Створіть власне авто в нашому конфігураторі
+					div.custom-cars.wrapper
+						div.carItem
+							img(src="img/custom1.png")
+							i.fas.fa-chevron-right
+							a  Jetta
+						div.carItem
+							img(src="img/custom2.png")
+							i.fas.fa-chevron-right
+							a Arteon
+						div.carItem
+							img(src="img/custom1.png")
+							i.fas.fa-chevron-right
+							a Passat
 							
+		div.mail-container
+			div.back
+				div.container
+					div.info-mail.wrapper
+						h2 Дізнавайся про головне
+						p Ви зацікавилися новинами з світу Volkswagen? Хочите дізнатися про нові моделі та знижки?  Підписуйтесь на новини!
+						h3	Підписуйтесь на новини
+						input.mail					
+
+		footer
+			div.container
+				div.information.wrapper
+					div.info
+						h3 Volkswagen
+						p Моделі
+						p	Новини
+					div.info
+						h3 Сервіс
+						p Конфігуратор
+						p	Підписка на новини
+					div.info
+						h3 Підтримка
+						p	Світ Volkswagen
+						p	Акції
+					div.info
+						h3 Соціальні мережі
+						p Facebook
+						p Instagram	
+				p © 2020 Volkswagen, all rights reserved	
+								
 	script(src="js/rdnavbar.js")
 	script(src="js/swiper.min.js")
 	script.

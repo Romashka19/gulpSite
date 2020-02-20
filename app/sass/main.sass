@@ -5,6 +5,13 @@ html
 body
 	margin: 0
 	padding: 0
+	
+.blockTitle
+	h1
+		font-family: sans-serif
+		text-align: center
+		font-size: 65px
+		font-style: normal
 
 hr
 	padding: 0
@@ -62,10 +69,18 @@ header
 				padding: 0 8px
 				.link
 					vertical-align: bottom
-					background-color: white
-					margin: 10px
+					margin: 8px
+					text-decoration: none
+					color: #001E50
+					font-weight: bold
 				.link:hover
-					border-bottom: 2px solid  black
+					border-bottom: 2px solid  #001E50
+				.linkAuth
+					text-decoration: none
+					font-weight: bold
+					color: #001E50
+				.linkAuth:hover
+					border-bottom: 2px solid  #001E50
 		.logo
 			z-index: 1
 			img
@@ -89,33 +104,82 @@ header
 		background-repeat: no-repeat
 		.slide-inner
 			padding-top: 230px 
-			
 			p
 				color: white
+				font-size: 20px
 			h1
 				color: whitesmoke
+				font-size: 40px
+				margin-bottom: 30px
 			.btnSwiper
 				background-color: white
 				border-radius: 20px
 				border: none
-				padding: 8px
+				padding: 12px
+				font-size: 20px
 				width: 190px
 
 .news-container
-	
-	.news
-		.newsTitle
-			h1
-				font-family: sans-serif
-				text-align: center
-				font-size: 65px
-				font-style: normal
+	display: flex
+	margin-bottom: 40px
+	.news	
 		.newsItem
 			justify-content: center
 			flex-wrap: wrap
+			height: 100%
 			.item
+				width: 512px
+				height: 420px
+				background-size: cover
+				background-position: center
 				margin: 40px
+				
+.custom-container
+	.custom
+		.custom-cars
+			justify-content: space-around
+			flex-wrap: wrap
+			.carItem
+				margin-top: 30px
+				width: 390px
+				text-align: center
+				img
+					height: 215px
+					margin-bottom: 10px
+				i
+					font-size: 30px
+				a
+					padding-left: 20px
+					text-decoration: none
+					color: #001E50
+					font-size: 30px
+					
+.mail-container
+	margin: 50px 0
+	width: 100%
+	.back
+		background-color: #001E50
+		.info-mail
+			height: 300px
+			color: white
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			.mail
+				border: none
+				border-radius: 20px
+				padding: 10px
+					
+footer
+	.information
+		justify-content: space-around
+		border-top: #001E50 2px solid
+		.info
+			color: #001E50
+	.rights-info
+		color: #0b0b0b
 
+//------------------------------------------------------------
 @media (max-width: 1488px)
 	.container
 		width: 930px
@@ -126,17 +190,38 @@ header
 			ul
 				li
 					padding: 0 3px
-
-
-
+			
+	.news-container
+		.news
+			.blockTitle
+				h1
+					font-family: sans-serif
+					text-align: center
+					font-size: 55px
+					font-style: normal
+			.newsItem
+				justify-content: center
+				flex-wrap: wrap
+				.item
+					width: 400px
+					height: 328px
+					background-size: contain
+					background-position: center
+					margin: 20px
+					
+	.custom-container
+		.custom
+			.blockTitle
+				h1
+					font-family: sans-serif
+					text-align: center
+					font-size: 55px
+					font-style: normal
+//------------------------------------------------------------
 @media (max-width: 930px)
 	.container
 		width: 620px
-
-
-@media (max-width: 822px)
-	.container
-		width: 620px
+		
 	header
 		.toggle-button
 			display: flex
@@ -144,15 +229,88 @@ header
 			.menuBottom
 				align-items: flex-start
 				display: none
-				ul
-					li
-						padding: 10px
+			.menuTop
+				z-index: 1
+				justify-content: flex-end
+				align-items: flex-start
+				padding-left: 25%
 
 			.menuBottom.active
 				display: flex
 				align-items: flex-start
 				flex-direction: column
-
-
 			.logo
-				padding-left: 50%
+				padding-left: 40%
+				
+	.swiper-container
+		height: 50%
+		.swiper-slide
+			.slide-inner
+				padding-top: 200px
+				p	
+				h1
+				.btnSwiper
+					padding: 5px
+					
+	.news-container
+		.news
+			.blockTitle
+				h1
+					font-family: sans-serif
+					text-align: center
+					font-size: 45px
+					font-style: normal
+					
+	.custom-container
+		.custom
+			.blockTitle
+				h1
+					font-family: sans-serif
+					text-align: center
+					font-size: 45px
+					font-style: normal
+								
+				
+//------------------------------------------------------------			
+@media (max-width: 691px)	
+	.container
+		width: 100%
+	header
+		.menu
+			justify-content: space-around
+			width: 100%
+			.menuTop
+				z-index: 1
+				justify-content: flex-end
+				align-items: flex-start
+				padding-left: 25%
+			.logo
+				padding-left: 5%
+		.swiper-container
+			height: 40%
+			.swiper-slide
+				.slide-inner
+					padding-top: 170px
+					p
+					h1
+					.btnSwiper
+						padding: 5px
+						
+
+	.news-container
+		.news
+			.blockTitle
+				h1
+					font-family: sans-serif
+					text-align: center
+					font-size: 35px
+					font-style: normal		
+						
+	.custom-container
+		.custom
+			.blockTitle
+				h1
+					font-family: sans-serif
+					text-align: center
+					font-size: 35px
+					font-style: normal
