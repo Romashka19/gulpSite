@@ -15,10 +15,10 @@ html(lang="en")
 		header
 			hr
 			div.container
-				a.toggle-button
-					span.bar
-					span.bar
-					span.bar
+				a.toggle-button-menu
+					span.bar-menu
+					span.bar-menu
+					span.bar-menu
 				div.menu.wrapper
 					ul.menuBottom
 						li
@@ -34,12 +34,17 @@ html(lang="en")
 
 					div.logo
 						img(src="img/logo.png")
-
+						p.logo-text Volkswagen
+					
 					ul.menuTop
 						li
 							a.linkAuth SingIn
 						li
 							a.linkAuth Register
+				a.toggle-button-reg
+					span.bar-reg
+					span.bar-reg
+					span.bar-reg
 
 			
 		div.swiper-container
@@ -70,11 +75,15 @@ html(lang="en")
 					div.blockTitle
 						h1 Актульне зі світу Volkswagen в Україні
 					div.newsItem.wrapper
-						div.item(style="background-image: url(img/new1.jpg)")
-						div.item(style="background-image: url(img/new2.jpg)")
-						div.item(style="background-image: url(img/new3.jpg)")
-						div.item(style="background-image: url(img/new4.jpg)")
-		
+						div.item
+							img(src="img/new1.jpg")
+						div.item
+							img(src="img/new2.jpg")
+						div.item
+							img(src="img/new3.jpg")
+						div.item
+							img(src="img/new4.jpg")
+			
 		div.custom-container
 			div.container
 				div.custom
@@ -101,7 +110,7 @@ html(lang="en")
 						h2 Дізнавайся про головне
 						p Ви зацікавилися новинами з світу Volkswagen? Хочите дізнатися про нові моделі та знижки?  Підписуйтесь на новини!
 						h3	Підписуйтесь на новини
-						input.mail					
+						input.mail(placeholder="Ваш email")					
 
 		footer
 			div.container

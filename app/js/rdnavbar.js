@@ -1,6 +1,13 @@
-let toggleButton = document.getElementsByClassName('toggle-button')[0];
-let menu = document.getElementsByClassName('menuBottom')[0]
+let toggleButtonMenu = document.getElementsByClassName('toggle-button-menu')[0];
+let menuBot = document.getElementsByClassName('menuBottom')[0]
 
-toggleButton.addEventListener('click',function() {
-    menu.classList.toggle('active')
+toggleButtonMenu.addEventListener('click',function() {
+	menuBot.classList.toggle('active')
+});
+
+let toggleButtonReg = document.getElementsByClassName('toggle-button-reg')[0];
+let menuTop = document.getElementsByClassName('menuTop')[0]
+
+toggleButtonReg.addEventListener('click',function() {
+	menuTop.classList.toggle('active')
 });

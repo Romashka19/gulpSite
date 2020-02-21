@@ -6,6 +6,10 @@ body
 	margin: 0
 	padding: 0
 	
+ul, li
+	padding: 0
+	margin: 0
+	
 .blockTitle
 	h1
 		font-family: sans-serif
@@ -29,6 +33,7 @@ hr
   margin-right: auto
   margin-left: auto
   width: 1240px
+  position: relative
 
 
 .wrapper
@@ -37,27 +42,38 @@ hr
 header
 	margin-top: 10px
 	position: relative
-	.toggle-button
+	.toggle-button-menu
 		position: absolute
 		display: none
 		flex-direction: column
 		justify-content: space-between
 		width: 30px
 		height: 21px
-		.bar
+		.bar-menu
 			height: 3px
 			width: 100%
+			background-color: #001E50
+	.toggle-button-reg
+		position: absolute
+		display: none
+		flex-direction: column
+		justify-content: space-between
+		width: 30px
+		height: 21px
+		.bar-reg
+			height: 3px
+			width: 3px
 			background-color: #001E50
 	.menu
 		justify-content: space-around
 		width: 100%
 		.menuTop
-			z-index: 1
+			z-index: 2
 			justify-content: flex-end
 			align-items: flex-start
-			padding-left: 35%
+			width: 500px
 		.menuBottom
-			z-index: 1
+			z-index: 2
 			justify-content: flex-start
 			align-items: flex-end
 		ul
@@ -74,20 +90,25 @@ header
 					color: #001E50
 					font-weight: bold
 				.link:hover
+					cursor: pointer
 					border-bottom: 2px solid  #001E50
 				.linkAuth
 					text-decoration: none
 					font-weight: bold
 					color: #001E50
 				.linkAuth:hover
+					cursor: pointer
 					border-bottom: 2px solid  #001E50
 		.logo
 			z-index: 1
+			margin: 0 auto
 			img
 				width: 100px
 				position: relative
 				background-color: #fff
 				padding: 0 15px
+			.logo-text
+				display: none
 
 .swiper-container
 	margin-top: 20px
@@ -128,8 +149,6 @@ header
 			flex-wrap: wrap
 			height: 100%
 			.item
-				width: 512px
-				height: 420px
 				background-size: cover
 				background-position: center
 				margin: 40px
@@ -169,6 +188,7 @@ header
 				border: none
 				border-radius: 20px
 				padding: 10px
+				color: #0b0b0b
 					
 footer
 	.information
@@ -179,138 +199,4 @@ footer
 	.rights-info
 		color: #0b0b0b
 
-//------------------------------------------------------------
-@media (max-width: 1488px)
-	.container
-		width: 930px
-	header
-		.menu
-			.menuBottom
-				padding: 0
-			ul
-				li
-					padding: 0 3px
-			
-	.news-container
-		.news
-			.blockTitle
-				h1
-					font-family: sans-serif
-					text-align: center
-					font-size: 55px
-					font-style: normal
-			.newsItem
-				justify-content: center
-				flex-wrap: wrap
-				.item
-					width: 400px
-					height: 328px
-					background-size: contain
-					background-position: center
-					margin: 20px
-					
-	.custom-container
-		.custom
-			.blockTitle
-				h1
-					font-family: sans-serif
-					text-align: center
-					font-size: 55px
-					font-style: normal
-//------------------------------------------------------------
-@media (max-width: 930px)
-	.container
-		width: 620px
-		
-	header
-		.toggle-button
-			display: flex
-		.menu
-			.menuBottom
-				align-items: flex-start
-				display: none
-			.menuTop
-				z-index: 1
-				justify-content: flex-end
-				align-items: flex-start
-				padding-left: 25%
-
-			.menuBottom.active
-				display: flex
-				align-items: flex-start
-				flex-direction: column
-			.logo
-				padding-left: 40%
-				
-	.swiper-container
-		height: 50%
-		.swiper-slide
-			.slide-inner
-				padding-top: 200px
-				p	
-				h1
-				.btnSwiper
-					padding: 5px
-					
-	.news-container
-		.news
-			.blockTitle
-				h1
-					font-family: sans-serif
-					text-align: center
-					font-size: 45px
-					font-style: normal
-					
-	.custom-container
-		.custom
-			.blockTitle
-				h1
-					font-family: sans-serif
-					text-align: center
-					font-size: 45px
-					font-style: normal
-								
-				
-//------------------------------------------------------------			
-@media (max-width: 691px)	
-	.container
-		width: 100%
-	header
-		.menu
-			justify-content: space-around
-			width: 100%
-			.menuTop
-				z-index: 1
-				justify-content: flex-end
-				align-items: flex-start
-				padding-left: 25%
-			.logo
-				padding-left: 5%
-		.swiper-container
-			height: 40%
-			.swiper-slide
-				.slide-inner
-					padding-top: 170px
-					p
-					h1
-					.btnSwiper
-						padding: 5px
-						
-
-	.news-container
-		.news
-			.blockTitle
-				h1
-					font-family: sans-serif
-					text-align: center
-					font-size: 35px
-					font-style: normal		
-						
-	.custom-container
-		.custom
-			.blockTitle
-				h1
-					font-family: sans-serif
-					text-align: center
-					font-size: 35px
-					font-style: normal
+@import "_media"
