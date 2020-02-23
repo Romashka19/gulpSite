@@ -1,0 +1,143 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Volkswagen
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css")
+        link(rel="stylesheet", href="css/libs.min.css")
+        link(rel="stylesheet", href="css/main.min.css")
+        link(rel="stylesheet", href="css/swiper.min.css")
+
+        script(src="js/libs.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js")
+    body
+        header
+            hr
+            div.container
+                a.toggle-button-menu
+                    span.bar-menu
+                    span.bar-menu
+                    span.bar-menu
+                div.menu.wrapper
+                    ul.menuBottom
+                        li
+                            a.link(href="/") Головна
+                        li
+                            a.link(href="models.html") Моделі
+                        li
+                            a.link Конфігуратор
+                        li
+                            a.link Акції
+                        li
+                            a.link.B Volkswagen
+
+                    div.logo
+                        img(src="img/logo.png")
+                        p.logo-text Volkswagen
+
+                    ul.menuTop
+                        li
+                            a.linkAuth SingIn
+                        li
+                            a.linkAuth Register
+                a.toggle-button-reg
+                    span.bar-reg
+                    span.bar-reg
+                    span.bar-reg
+
+        div.models-container
+            div.model-img(style="background-image: url(img/polo.jpg)")
+                div.model.container.wrapper
+                        div.info-model
+                            h3 По новому стильний. Як завжди, надійний.
+                            h1 Polo sedan.
+                            p орієнтовна вартість від ₴ 1 746 775*
+                        div.btn-model
+                            button.models-btn Конфігуратор
+                            button.models-btn Придбати
+            div.model-img(style="background-image: url(img/polo2.png)")
+                div.model.container.wrapper
+                    div.info-model
+                        h3 Захист з кожного боку. Краса з кожного ракурсу.
+                        h1 Polo.
+                        p орієнтовна вартість від ₴ 1 746 775*
+                    div.btn-model
+                        button.models-btn Конфігуратор
+                        button.models-btn Придбати
+            div.model-img(style="background-image: url(img/golf.png)")
+                div.model.container.wrapper
+                    div.info-model
+                        h3 Універсальний, як ніхто інший.
+                        h1 Golf.
+                        p орієнтовна вартість від ₴ 1 746 775*
+                    div.btn-model
+                        button.models-btn Конфігуратор
+                        button.models-btn Придбати
+            div.model-img(style="background-image: url(img/t-roc.png)")
+                div.model.container.wrapper
+                    div.info-model
+                        h3 Твій наступний крок.
+                        h1 Новий T-Roc.
+                        p орієнтовна вартість від ₴ 1 746 775*
+                    div.btn-model
+                        button.models-btn Конфігуратор
+                        button.models-btn Придбати
+            div.model-img(style="background-image: url(img/tiguan.png)")
+                div.model.container.wrapper
+                    div.info-model
+                        h3 Незвіданне чекає на Вас.
+                        h1 Tiguan.
+                        p орієнтовна вартість від ₴ 1 746 775*
+                    div.btn-model
+                        button.models-btn Конфігуратор
+                        button.models-btn Придбати
+            div.model-img(style="background-image: url(img/touareg.png)")
+                div.model.container.wrapper
+                    div.info-model
+                        h3 Позашляховик якісно нового покоління.
+                        h1 Новий Touareg.
+                        p орієнтовна вартість від ₴ 1 746 775*
+                    div.btn-model
+                        button.models-btn Конфігуратор
+                        button.models-btn Придбати
+
+
+        footer
+            div.container
+                div.information.wrapper
+                    div.info
+                        h3 Volkswagen
+                        p Моделі
+                        p	Новини
+                    div.info
+                        h3 Сервіс
+                        p Конфігуратор
+                        p	Підписка на новини
+                    div.info
+                        h3 Підтримка
+                        p	Світ Volkswagen
+                        p	Акції
+                    div.info
+                        h3 Соціальні мережі
+                        p Facebook
+                        p Instagram
+                p © 2020 Volkswagen, all rights reserved
+
+    script(src="js/rdnavbar.js")
+    script(src="js/swiper.min.js")
+    script.
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
