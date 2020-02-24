@@ -1,0 +1,157 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Volkswagen
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css")
+        link(rel="stylesheet", href="css/libs.min.css")
+        link(rel="stylesheet", href="css/main.min.css")
+        link(rel="stylesheet", href="css/swiper.min.css")
+
+        script(src="js/libs.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js")
+    body
+        header
+            hr
+            div.container
+                a.toggle-button-menu
+                    span.bar-menu
+                    span.bar-menu
+                    span.bar-menu
+                div.menu.wrapper
+                    ul.menuBottom
+                        li
+                            a.link(href="/") Головна
+                        li
+                            a.link(href="models.html") Моделі
+                        li
+                            a.link Конфігуратор
+                        li
+                            a.link Акції
+                        li
+                            a.link.B Volkswagen
+
+                    div.logo
+                        img(src="img/logo.png")
+                        p.logo-text Volkswagen
+
+                    ul.menuTop
+                        li
+                            a.linkAuth SingIn
+                        li
+                            a.linkAuth Register
+                a.toggle-button-reg
+                    span.bar-reg
+                    span.bar-reg
+                    span.bar-reg
+
+        div.car-container
+            div.model-img(style="background-image: url(img/polo.jpg)")
+                div.model.container.wrapper
+                    div.info-model
+                        h3 По новому стильний. Як завжди, надійний.
+                        h1 Polo sedan.
+                        p орієнтовна вартість від ₴ 1 746 775*
+        div.security-container
+            div.security
+                div.security-title
+                    h1 Обладнання і Безпека
+                div.security-info.wrapper
+                    div.info
+                        h3 Знає, що безпека перш за все
+                        p В Polo sedan Ви завжди зможете почуватися розслаблено. З такою кількістю асистентів водієві залишається лише повністю сконцентруватися на дорозі. Будьте впевнені: він буде надихати Вас знову і знову.
+                    div.img(style="background-image: url(img/polo-back.png)")
+
+        div.comfort-container
+            div.comfort
+                div.comfort-title
+                    h1 Комфорт
+                    p Нова місцевість рідко буваю звичною та зручною. Тим більше важливо, що на Вас там чекає. Завдяки своєму продуманому та ергономічному інтер'єру Polo sedan робить вашу подорож максимально комфортною.
+                div.comfort-info.wrapper
+                    div.info
+                        h3 Автомобіль - зона комфорту на ходу
+                        p Неважливо, у наскільки далеку подорож Ви зібралися. У Polo sedan водій та його пасажири завжди будуть отримувати насолоду від обраного маршруту.
+                    div.img(style="background-image: url(img/polo-inside.png)")
+        div.equipment-container
+            div.equipment
+                div.container
+                    h1 Технічні характеристики
+                    table
+                        tr
+                            th Двигун
+                            th 1.6 л MPI 90 к.с. 5-ступ. МКП
+                            th 1.4 TSI 125 к.с. 6-ступ. МКП
+                            th 1.4 TSI 125 к.с. 7-ступ. DSG
+                        tr
+                            td Тип двигуна / Кількість клапанів на циліндр
+                            td 4-х циліндровий, бензиновий/4
+                            td 4-х циліндровий, бензиновий/4
+                            td 4-х циліндровий, бензиновий/4
+                        tr
+                            td Робочий об’єм, л / см
+                            td куб.1.6 л / 1598 см.
+                            td куб1.4 л / 1395 см.
+                            td куб1.4 л / 1395 см.
+                        tr
+                            td Система подачі палива
+                            td Розподілене впорскування
+                            td Безпосереднє впорскування
+                            td Безпосереднє впорскування
+                        tr
+                            td Макс. потужність, к.с. (кВт) при об/хв
+                            td 90 к.с. (66 кВт) при 4250 об/хв
+                            td 125 к.с. (92 кВт) при 5000 об/хв
+                            td 125 к.с. (92 кВт) при 5000 об/хв
+                        tr
+                            td Макс. крутний момент, Нм при об./хв.
+                            td 155 Нм при 3800 об/хв
+                            td 200 Нм при 1400 об/хв
+                            td 200 Нм при 1400 об/хв
+                        tr
+                            td Коробка передач
+                            td 5-cтупенева механічна
+                            td 6-cтупенева механічна
+                            td 7-ступенева автоматична DSG
+
+
+
+
+        footer
+            div.container
+                div.information.wrapper
+                    div.info
+                        h3 Volkswagen
+                        p Моделі
+                        p	Новини
+                    div.info
+                        h3 Сервіс
+                        p Конфігуратор
+                        p	Підписка на новини
+                    div.info
+                        h3 Підтримка
+                        p	Світ Volkswagen
+                        p	Акції
+                    div.info
+                        h3 Соціальні мережі
+                        p Facebook
+                        p Instagram
+                p © 2020 Volkswagen, all rights reserved
+
+    script(src="js/rdnavbar.js")
+    script(src="js/swiper.min.js")
+    script.
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
