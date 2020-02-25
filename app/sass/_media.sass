@@ -1,429 +1,521 @@
-
 //------------------------------------------------------------
 @media (max-width: 1488px)
-	.container
-		width: 955px
-	header
-		.menu
-			.menuTop
-				width: 365px
-			.menuBottom
-				padding: 0
-			ul
-				li
-					padding: 0 
-					.linkAuth
-						padding: 0 10px
-					
-	.news-container
-		.news
-			.blockTitle
-				h1
-					font-family: sans-serif
-					text-align: center
-					font-size: 55px
-					font-style: normal
-			.newsItem
-				justify-content: center
-				flex-wrap: wrap
-				.item
-					background-size: contain
-					background-position: center
-					margin: 20px
-					img
-						width: 400px
-						height: 328px
+  .container
+    max-width: 955px
+  header
+    .menu
+      .menuTop
+        width: 365px
 
-	.custom-container
-		.custom
-			.blockTitle
-				h1
-					font-family: sans-serif
-					text-align: center
-					font-size: 55px
-					font-style: normal
+      .menuBottom
+        padding: 0
 
-	.models-container
-		.model-img
-			.model
-				.info-model
-					width: 340px
+      ul
+        li
+          padding: 0
 
-	.car-container
-		.model-img
-			.model
-				.info-model
-					width: 450px
-					padding-left: 100px
+          .linkAuth
+            padding: 0 10px
 
-	.security-container
-		.security
-			.security-title
-			.security-info
-				.info
-					margin-left: 100px
-					h3
-						font-size: 30px
-					p
-						font-size: 15px
-				.img
-					margin-right: 100px
-					height: 400px
+  .news-container
+    .news
+      .blockTitle
+        h1
+          font-family: sans-serif
+          text-align: center
+          font-size: 55px
+          font-style: normal
+
+      .newsItem
+        justify-content: center
+        flex-wrap: wrap
+
+        .item
+          background-size: contain
+          background-position: center
+          margin: 20px
+
+          img
+            width: 400px
+            height: 328px
+
+  .custom-container
+    .custom
+      .blockTitle
+        h1
+          font-family: sans-serif
+          text-align: center
+          font-size: 55px
+          font-style: normal
+
+  .models-container
+    .model-img
+      .model
+        .info-model
+          width: 340px
+
+  .car-container
+    .model-img
+      .model
+        .info-model
+          width: 450px
+          padding-left: 100px
+
+  .security-container
+    .security
+      .security-title
+
+      .security-info
+        .info
+          margin-left: 100px
+
+          h3
+            font-size: 30px
+
+          p
+            font-size: 15px
+
+        .img
+          margin-right: 100px
+          height: 400px
 
 
+  .comfort-container
+    .comfort
+      .comfort-title
+        p
+          padding: 0 100px
 
-	.comfort-container
-		.comfort
-			.comfort-title
-				p
-					padding: 0 100px
-			.comfort-info
-				.info
-					margin-left: 100px
-					h3
-						font-size: 30px
-					p
-						font-size: 15px
+      .comfort-info
+        .info
+          margin-left: 100px
 
-				.img
-					margin-right: 100px
+          h3
+            font-size: 30px
 
-	.equipment-container
-		.equipment
-			h1
+          p
+            font-size: 15px
 
-			table
+        .img
+          margin-right: 100px
 
-				tr
-					th
+  .equipment-container
+    .equipment
+      h1
 
-				tr
-					td
+      table
 
+        tr
+          th
+
+        tr
+          td
 
 
 //------------------------------------------------------------
 @media (max-width: 955px)
-	.container
-		width: 620px
+  .container
+    max-width: 620px
 
-	header
-		.toggle-button-menu
-			display: flex
-		.menu
-			.menuTop
-				justify-content: flex-end
-				align-items: flex-start
-				width: 0
-			.menuBottom
-				align-items: flex-start
-				display: none
-			.menuBottom.active
-				display: flex
-				align-items: flex-start
-				flex-direction: column
-				z-index: 2
-				top: 35px
-				position: absolute
-				left: 20px
-				background-color: white
-				padding: 10px
-				border-radius: 10px
-				li 
-					padding: 10px
-			.logo
-				margin: 0 auto
+  header
+    .toggle-button-menu
+      display: flex
 
-	.swiper-container
-		height: 50%
-		.swiper-slide
-			.slide-inner
-				padding-top: 200px
-				.btnSwiper
-					padding: 5px
+    .menu
+      .menuTop
+        justify-content: flex-end
+        align-items: flex-start
+        width: 0
 
-	.news-container
-		.news
-			.blockTitle
-				h1
-					font-family: sans-serif
-					text-align: center
-					font-size: 45px
-					font-style: normal
+      .menuBottom
+        align-items: flex-start
+        display: none
 
-	.custom-container
-		.custom
-			.blockTitle
-				h1
-					font-family: sans-serif
-					text-align: center
-					font-size: 45px
-					font-style: normal
-	.models-container
-		.model-img
-			height: 60%
-			.model
-				.info-model
-					width: 340px
-					h3
-						margin-left: 0
-						font-size: 25px
-					h1
-						font-size: 50px
-					p
-				.btn-model
-					flex-direction: column
-					justify-content: flex-end
-					.models-btn
-						margin: 10px 0
-	.car-container
-		.model-img
-			height: 60%
-			.model
-				.info-model
-					display: flex
-					flex-direction: column
-					align-items: flex-start
-					justify-content: flex-start
-					width: 400px
-					h3
-						margin-left: 0
-						font-size: 25px
-					h1
-						font-size: 50px
-					p
-				.btn-model
-					flex-direction: column
-					justify-content: flex-end
-					.models-btn
-						margin: 10px 0
+      .menuBottom.active
+        display: flex
+        align-items: flex-start
+        flex-direction: column
+        z-index: 2
+        top: 35px
+        position: absolute
+        left: 20px
+        background-color: white
+        padding: 10px
+        border-radius: 10px
 
-	.security-container
-		.security
-			.security-title
-				margin: 30px
-				h1
-					font-size: 50px
-			.security-info
-				.info
-					margin-left: 20px
-					width: 75%
-				.img
-					height: 350px
-					margin-right: 20px
+        li
+          padding: 10px
 
-	.comfort-container
-		.comfort
-			.comfort-title
+      .logo
+        margin: 0 auto
 
-				h1
-					font-size: 50px
-				p
-					padding: 0
-			.comfort-info
-				.info
-					margin-left: 20px
-					width: 75%
-				.img
-					margin-right: 20px
+  .swiper-container
+    height: 50%
 
-	.equipment-container
+    .swiper-slide
+      .slide-inner
+        padding-top: 200px
 
-		.equipment
-			h1
+        .btnSwiper
+          padding: 5px
 
-			table
+  .news-container
+    .news
+      .blockTitle
+        h1
+          font-family: sans-serif
+          text-align: center
+          font-size: 45px
+          font-style: normal
 
-				tr
-					th
+  .custom-container
+    .custom
+      .blockTitle
+        h1
+          font-family: sans-serif
+          text-align: center
+          font-size: 45px
+          font-style: normal
+  .models-container
+    .model-img
+      height: 60%
 
-				tr
-					td
+      .model
+        .info-model
+          width: 340px
+
+          h3
+            margin-left: 0
+            font-size: 25px
+
+          h1
+            font-size: 50px
+
+          p
+
+        .btn-model
+          flex-direction: column
+          justify-content: flex-end
+
+          .models-btn
+            margin: 10px 0
+  .car-container
+    .model-img
+      height: 60%
+
+      .model
+        .info-model
+          display: flex
+          flex-direction: column
+          align-items: flex-start
+          justify-content: flex-start
+          width: 400px
+
+          h3
+            margin-left: 0
+            font-size: 25px
+
+          h1
+            font-size: 50px
+
+          p
+
+        .btn-action
+          flex-direction: column
+          justify-content: flex-end
+
+          .action
+            margin: 10px 0
+
+  .security-container
+    .security
+      .security-title
+        margin: 30px
+
+        h1
+          font-size: 50px
+
+      .security-info
+        .info
+          margin-left: 20px
+          width: 75%
+
+        .img
+          height: 350px
+          margin-right: 20px
+
+  .comfort-container
+    .comfort
+      .comfort-title
+
+        h1
+          font-size: 50px
+
+        p
+          padding: 0
+
+      .comfort-info
+        .info
+          margin-left: 20px
+          width: 75%
+
+        .img
+          margin-right: 20px
+  .customise-container
+    .customise
+      display: block
+      .properties-container
+        p
+
+        h3
+          font-size: 25px
+        h4
+          font-size: 15px
+        .radio-style
+          label
+            input
+              margin-right: 2px
+              width: 37px
+              height: 35px
+          .checkmark
+            width: 40px
+            height: 40px
+            position: absolute
+            top: 0
+            left: 0
+            box-shadow: 0 4px 9px black
+
+
 
 
 //------------------------------------------------------------			
 @media (max-width: 691px)
-	.container
-		width: 100%
-	hr
-		display: none
-	header
-		.container
-			width: auto
-			display: flex
-			justify-content: space-around
-			.toggle-button-menu
-				margin: 12px 0 0 12px
-				position: relative
-			.toggle-button-reg
-				display: flex
-				position: relative
-				margin: 12px 0 0 12px
-			.menu
-				justify-content: space-around
-				width: 100%
-				.menuTop
-					display: none
-				.menuTop.active
-					width: auto
-					display: flex
-					align-items: flex-end
-					flex-direction: column
-					z-index: 2
-					top: 35px
-					position: absolute
-					right: 20px
-					background-color: white
-					padding: 10px
-					border-radius: 10px
-					li
-						padding: 10px
-				.logo
-					img
-						display: none
-					.logo-text
-						display: flex
-						color: #001E50
-						margin: 0
-						font-size: 33px
-	.swiper-container
-		height: 50%
-		.swiper-slide
-			.slide-inner
-				padding-top: 70px
-				margin: 0 30px
-				p
-					font-size: 15px
-				h1
-					font-size: 20px
-				.btnSwiper
-					font-size: 20px
-					padding: 5px
+  .container
+    max-width: 100%
+  hr
+    display: none
+  header
+    .container
+      width: auto
+      display: flex
+      justify-content: space-around
 
-	.news-container
-		.news
-			.blockTitle
-				h1
-					font-family: sans-serif
-					text-align: center
-					font-size: 35px
-					font-style: normal
-			.newsItem
-				.item
-					background-size: contain
-					background-position: center
-					margin: 20px
-					img
-						width: 100%
-						height: auto
-	.custom-container
-		.custom
-			.blockTitle
-				h1
-					font-family: sans-serif
-					text-align: center
-					font-size: 35px
-					font-style: normal
-			.custom-cars
-				.carItem
-					img
-						width: 100%
-						height: auto
-	.mail-container
-		.back
-			.container
-				width: 70%
-				.info-mail
-					h2
-						font-size: 20px
-					p
-						font-size: 12px
-					h3
-						font-size: 20px
-					.mail
-						padding: 5px 10px
-	footer
-		.information
-			flex-wrap: wrap
-			.info
-				padding: 5px
-				h3
-					font-size: 12px
-				p
-					font-size: 10px
-	.models-container
-		.model-img
-			height: 50%
-			.model
-				.info-model
-					display: flex
-					flex-direction: column
-					align-items: flex-start
-					justify-content: flex-start
-					width: 340px
-					h3
-						margin-left: 0
-						font-size: 20px
-					h1
-						font-size: 35px
-					p
-				.btn-model
-					flex-direction: column
-					justify-content: flex-end
-					.models-btn
-						margin: 10px 0
-	.car-container
-		.model-img
-			height: 50%
-			.model
-				.info-model
-					display: flex
-					flex-direction: column
-					align-items: flex-start
-					justify-content: flex-start
-					width: 340px
-					h3
-						margin-left: 0
-						font-size: 20px
-					h1
-						font-size: 35px
-					p
+      .toggle-button-menu
+        margin: 12px 0 0 12px
+        position: relative
 
-	.security-container
-		.security
-			.security-title
-				h1
-					font-size: 40px
-			.security-info
-				.info
-					h3
-						font-size: 20px
-					p
-						font-size: 13px
-				.img
-					width: 60%
-					height: 300px
+      .toggle-button-reg
+        display: flex
+        position: relative
+        margin: 12px 0 0 12px
 
-	.comfort-container
-		.comfort
-			.comfort-title
-				h1
-				p
-			.comfort-info
-				.info
-					h3
-					p
-				.img
+      .menu
+        justify-content: space-around
+        width: 100%
 
-	.equipment-container
-		.equipment
-			h1
-				font-size: 30px
-			table
+        .menuTop
+          display: none
 
-				tr
-					th
-						font-size: 11px
-				tr
-					td
-						font-size: 10px
+        .menuTop.active
+          width: auto
+          display: flex
+          align-items: flex-end
+          flex-direction: column
+          z-index: 2
+          top: 35px
+          position: absolute
+          right: 20px
+          background-color: white
+          padding: 10px
+          border-radius: 10px
+
+          li
+            padding: 10px
+
+        .logo
+          img
+            display: none
+
+          .logo-text
+            display: flex
+            color: #001E50
+            margin: 0
+            font-size: 33px
+  .swiper-container
+    height: 50%
+
+    .swiper-slide
+      .slide-inner
+        padding-top: 70px
+        margin: 0 30px
+
+        p
+          font-size: 15px
+
+        h1
+          font-size: 20px
+
+        .btnSwiper
+          font-size: 20px
+          padding: 5px
+
+  .news-container
+    .news
+      .blockTitle
+        h1
+          font-family: sans-serif
+          text-align: center
+          font-size: 35px
+          font-style: normal
+
+      .newsItem
+        .item
+          background-size: contain
+          background-position: center
+          margin: 20px
+
+          img
+            width: 100%
+            height: auto
+  .custom-container
+    .custom
+      .blockTitle
+        h1
+          font-family: sans-serif
+          text-align: center
+          font-size: 35px
+          font-style: normal
+
+      .custom-cars
+        .carItem
+          img
+            width: 100%
+            height: auto
+  .mail-container
+    .back
+      .container
+        width: 70%
+
+        .info-mail
+          h2
+            font-size: 20px
+
+          p
+            font-size: 12px
+
+          h3
+            font-size: 20px
+
+          .mail
+            padding: 5px 10px
+  footer
+    .information
+      flex-wrap: wrap
+
+      .info
+        padding: 5px
+
+        h3
+          font-size: 12px
+
+        p
+          font-size: 10px
+  .models-container
+    .model-img
+      height: 50%
+      .model
+        flex-direction: column
+        .info-model
+          padding-bottom: 100px
+          display: flex
+          flex-direction: column
+          align-items: flex-start
+          justify-content: flex-start
+          width: 100%
+          h3
+            margin-left: 0
+            font-size: 14px
+
+          h1
+            font-size: 35px
+            margin: 0
+          p
+
+        .btn-action
+          flex-direction: row
+          padding-bottom: 0
+          justify-content: space-around
+
+  .car-container
+    .model-img
+      height: 50%
+      .model
+        .info-model
+          padding: 0
+          display: flex
+          flex-direction: column
+          align-items: flex-start
+          justify-content: flex-start
+          width: 100%
+
+          h3
+            margin-left: 0
+            font-size: 20px
+
+          h1
+            font-size: 35px
+
+          p
+
+  .security-container
+    .security
+      .security-title
+        h1
+          font-size: 40px
+      .security-info
+        .info
+          h3
+            font-size: 20px
+          p
+            font-size: 13px
+        .img
+          width: 60%
+          height: 300px
+
+  .comfort-container
+    .comfort
+      .comfort-title
+        h1
+          font-size: 40px
+      .comfort-info
+        .info
+          h3
+            font-size: 20px
+          p
+            font-size: 13px
+            margin: 0
+        .img
+          width: 60%
+          height: 300px
+
+  .equipment-container
+    .equipment
+      h1
+        font-size: 30px
+
+      table
+
+        tr
+          th
+            font-size: 11px
+
+        tr
+          td
+            font-size: 10px
+  .customise-container
+    .customise
+      display: block
+      .properties-container
+        .save-car
+          margin: auto
+          padding: 10px 80px

@@ -1,30 +1,30 @@
 html
-	position: relative
-	height: 100%
+  position: relative
+  height: 100%
 
 body
-	margin: 0
-	padding: 0
-	
+  margin: 0
+  padding: 0
+
 ul, li
-	padding: 0
-	margin: 0
+  padding: 0
+  margin: 0
 
 h1
-	font-family: sans-serif
-	text-align: center
-	font-size: 65px
-	font-style: normal
+  font-family: sans-serif
+  text-align: center
+  font-size: 65px
+  font-style: normal
 
 hr
-	padding: 0
-	margin: 0
-	position: absolute
-	top: 50%
-	width: 100%
-	border: none
-	height: 2px
-	background-color: #001E50
+  padding: 0
+  margin: 0
+  position: absolute
+  top: 50%
+  width: 100%
+  border: none
+  height: 2px
+  background-color: #001E50
 
 .container
   padding-right: 15px
@@ -34,307 +34,394 @@ hr
   width: 1240px
   position: relative
 
-
 .wrapper
-	display: flex
-
+  display: flex
 header
-	margin-top: 10px
-	position: relative
-	.toggle-button-menu
-		position: absolute
-		display: none
-		flex-direction: column
-		justify-content: space-between
-		width: 30px
-		height: 21px
-		.bar-menu
-			height: 3px
-			width: 100%
-			background-color: #001E50
-	.toggle-button-reg
-		position: absolute
-		display: none
-		flex-direction: column
-		justify-content: space-between
-		width: 30px
-		height: 21px
-		.bar-reg
-			height: 3px
-			width: 3px
-			background-color: #001E50
-	.menu
-		justify-content: space-around
-		width: 100%
-		.menuTop
-			z-index: 2
-			justify-content: flex-end
-			align-items: flex-start
-			width: 500px
-		.menuBottom
-			z-index: 2
-			justify-content: flex-start
-			align-items: flex-end
-		ul
-			list-style: none
-			display: flex
-			margin-bottom: 0
-			li
-				display: inline
-				padding: 0 8px
-				.link
-					vertical-align: bottom
-					margin: 8px
-					text-decoration: none
-					color: #001E50
-					font-weight: bold
-				.link:hover
-					cursor: pointer
-					border-bottom: 2px solid  #001E50
-				.linkAuth
-					text-decoration: none
-					font-weight: bold
-					color: #001E50
-				.linkAuth:hover
-					cursor: pointer
-					border-bottom: 2px solid  #001E50
-		.logo
-			z-index: 1
-			margin: 0 auto
-			img
-				width: 100px
-				position: relative
-				background-color: #fff
-				padding: 0 15px
-			.logo-text
-				display: none
-
+  margin-top: 10px
+  position: relative
+  .toggle-button-menu
+    position: absolute
+    display: none
+    flex-direction: column
+    justify-content: space-between
+    width: 30px
+    height: 21px
+    .bar-menu
+      height: 3px
+      width: 100%
+      background-color: #001E50
+  .toggle-button-reg
+    position: absolute
+    display: none
+    flex-direction: column
+    justify-content: space-between
+    width: 30px
+    height: 21px
+    .bar-reg
+      height: 3px
+      width: 3px
+      background-color: #001E50
+  .menu
+    justify-content: space-around
+    width: 100%
+    .menuTop
+      z-index: 2
+      justify-content: flex-end
+      align-items: flex-start
+      width: 500px
+    .menuBottom
+      z-index: 2
+      justify-content: flex-start
+      align-items: flex-end
+    ul
+      list-style: none
+      display: flex
+      margin-bottom: 0
+      li
+        display: inline
+        padding: 0 8px
+        .link
+          vertical-align: bottom
+          margin: 8px
+          text-decoration: none
+          color: #001E50
+          font-weight: bold
+        .link:hover
+          cursor: pointer
+          border-bottom: 2px solid #001E50
+        .linkAuth
+          text-decoration: none
+          font-weight: bold
+          color: #001E50
+        .linkAuth:hover
+          cursor: pointer
+          border-bottom: 2px solid #001E50
+    .logo
+      z-index: 1
+      margin: 0 auto
+      img
+        width: 100px
+        position: relative
+        background-color: #fff
+        padding: 0 15px
+      .logo-text
+        display: none
 .swiper-container
-	margin-top: 20px
-	margin-bottom: 50px
-	width: 100%
-	height: 70%
-	
-	.swiper-slide
-		display: flex
-		justify-content: center
-		align-items: center
-		background-size: cover
-		background-position: center
-		background-repeat: no-repeat
-		.slide-inner
-			padding-top: 230px 
-			p
-				color: white
-				font-size: 20px
-				text-shadow: black 0 0 6px
-			h1
-				color: whitesmoke
-				font-size: 40px
-				margin-bottom: 30px
-				text-shadow: black 0 0 6px
-			.btnSwiper
-				background-color: white
-				border-radius: 20px
-				border: none
-				padding: 12px
-				font-size: 20px
-				width: 190px
-
+  margin-top: 20px
+  margin-bottom: 50px
+  width: 100%
+  height: 70%
+  .swiper-slide
+    display: flex
+    justify-content: center
+    align-items: center
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    .slide-inner
+      padding-top: 230px
+      p
+        color: white
+        font-size: 20px
+        text-shadow: black 0 0 6px
+      h1
+        color: whitesmoke
+        font-size: 40px
+        margin-bottom: 30px
+        text-align: left
+        text-shadow: black 0 0 6px
+      .btnSwiper
+        background-color: white
+        border-radius: 20px
+        border: none
+        padding: 12px
+        font-size: 20px
+        width: 190px
 .news-container
-	display: flex
-	margin-bottom: 40px
-	.news	
-		.newsItem
-			justify-content: center
-			flex-wrap: wrap
-			height: 100%
-			.item
-				background-size: cover
-				background-position: center
-				margin: 40px
-				
+  display: flex
+  margin-bottom: 40px
+  .news
+    .newsItem
+      justify-content: center
+      flex-wrap: wrap
+      height: 100%
+      .item
+        background-size: cover
+        background-position: center
+        margin: 40px
+
 .custom-container
-	.custom
-		.custom-cars
-			justify-content: space-around
-			flex-wrap: wrap
-			.carItem
-				margin-top: 30px
-				width: 390px
-				text-align: center
-				img
-					height: 215px
-					margin-bottom: 10px
-				i
-					font-size: 30px
-				a
-					padding-left: 20px
-					text-decoration: none
-					color: #001E50
-					font-size: 30px
-					
+  .custom
+    .custom-cars
+      justify-content: space-around
+      flex-wrap: wrap
+
+      .carItem
+        margin-top: 30px
+        width: 390px
+        text-align: center
+
+        img
+          height: 215px
+          margin-bottom: 10px
+
+        i
+          font-size: 30px
+
+        a
+          padding-left: 20px
+          text-decoration: none
+          color: #001E50
+          font-size: 30px
+
 .mail-container
-	margin: 50px 0
-	width: 100%
-	.back
-		background-color: #001E50
-		.info-mail
-			height: 300px
-			color: white
-			flex-direction: column
-			justify-content: center
-			align-items: center
-			.mail
-				border: none
-				border-radius: 20px
-				padding: 10px
-				color: #0b0b0b
-					
+  margin: 50px 0
+  width: 100%
+
+  .back
+    background-color: #001E50
+
+    .info-mail
+      height: 300px
+      color: white
+      flex-direction: column
+      justify-content: center
+      align-items: center
+
+      .mail
+        border: none
+        border-radius: 20px
+        padding: 10px
+        color: #0b0b0b
+
 footer
-	margin-top: 30px
-	.information
-		justify-content: space-around
-		border-top: #001E50 2px solid
-		.info
-			color: #001E50
-	.rights-info
-		color: #0b0b0b
+  margin-top: 30px
+
+  .information
+    justify-content: space-around
+    border-top: #001E50 2px solid
+
+    .info
+      color: #001E50
+
+  .rights-info
+    color: #0b0b0b
 
 .models-container
-	margin-top: 20px
-	.model-img
-		background-size: cover
-		background-position: center
-		background-repeat: no-repeat
-		width: 100%
-		height: 100%
-		.model
-			justify-content: space-between
-			height: 100%
-			.info-model
-				display: flex
-				flex-direction: column
-				align-items: flex-start
-				justify-content: flex-end
-				color: white
-				padding-bottom: 70px
-				h3
-					font-size: 30px
-					margin-left: -90px
-					text-shadow: black 0 0 6px
-				h1
-					font-size: 60px
-					font-weight: bold
-					text-shadow: black 0 0 6px
-				p
-			.btn-model
-				display: flex
-				align-items: flex-end
-				padding-bottom: 70px
-				.models-btn
-					font-size: 15px
-					margin: 20px
-					color: #0b0b0b
-					padding: 5px 30px
-					border: none
-					border-radius: 20px
-					background-color: white
+  margin-top: 20px
+
+  .model-img
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    width: 100%
+    height: 100%
+
+    .model
+      justify-content: space-between
+      height: 100%
+
+      .info-model
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: flex-end
+        color: white
+        padding-bottom: 70px
+
+        h3
+          font-size: 30px
+          margin-left: -90px
+          text-shadow: black 0 0 6px
+
+        h1
+          font-size: 60px
+          font-weight: bold
+          text-shadow: black 0 0 6px
+
+        p
+
+      .btn-action
+        display: flex
+        align-items: flex-end
+        padding-bottom: 70px
+
+        .action
+          font-size: 15px
+          margin: 20px
+          color: #0b0b0b
+          padding: 5px 30px
+          border: none
+          border-radius: 20px
+          background-color: white
+
 .car-container
-	margin-top: 20px
-	.model-img
-		background-size: cover
-		background-position: center
-		background-repeat: no-repeat
-		width: 100%
-		height: 100%
-		.model
-			height: 100%
-			.info-model
-				display: flex
-				flex-direction: column
-				align-items: flex-start
-				justify-content: flex-end
-				color: white
-				padding-bottom: 70px
-				h3
-					font-size: 30px
-					margin-left: -90px
-					text-shadow: black 0 0 6px
-				h1
-					font-size: 60px
-					font-weight: bold
-					text-shadow: black 0 0 6px
+  margin-top: 20px
+
+  .model-img
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    width: 100%
+    height: 100%
+
+    .model
+      height: 100%
+
+      .info-model
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: flex-end
+        color: white
+        padding-bottom: 70px
+
+        h3
+          font-size: 30px
+          margin-left: -90px
+          text-shadow: black 0 0 6px
+
+        h1
+          font-size: 60px
+          font-weight: bold
+          text-shadow: black 0 0 6px
+
 .security-container
-	.security
-		.security-title
-			margin: 60px
-			h1
-				font-family: sans-serif
-				text-align: center
-				font-size: 65px
-				font-style: normal
-		.security-info
-			.info
-				width: 80%
-				margin-left: 200px
-				h3
-					font-size: 35px
-				p
-					margin: 0 40px
-					font-size: 18px
-			.img
-				width: 100%
-				height: 500px
-				margin-right: 200px
-				background-size: cover
-				background-position: center
-				background-repeat: no-repeat
+  .security
+    .security-title
+      margin: 60px
+
+      h1
+        font-family: sans-serif
+        text-align: center
+        font-size: 65px
+        font-style: normal
+
+    .security-info
+      .info
+        width: 80%
+        margin-left: 200px
+
+        h3
+          font-size: 35px
+
+        p
+          margin: 0 40px
+          font-size: 18px
+
+      .img
+        width: 100%
+        height: 500px
+        margin-right: 200px
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
 
 
 .comfort-container
-	.comfort
-		.comfort-title
-			margin: 40px
-			h1
-				font-family: sans-serif
-				text-align: center
-				font-size: 65px
-				font-style: normal
-			p
-				font-size: 20px
-				padding: 0 400px
-		.comfort-info
-			.info
-				width: 80%
-				margin-left: 200px
-				h3
-					font-size: 35px
-				p
-					margin: 0 40px
-					font-size: 18px
-			.img
-				width: 100%
-				height: 500px
-				margin-right: 200px
-				background-size: cover
-				background-position: center
-				background-repeat: no-repeat
+  .comfort
+    .comfort-title
+      margin: 40px
+
+      h1
+        font-family: sans-serif
+        text-align: center
+        font-size: 65px
+        font-style: normal
+
+      p
+        font-size: 20px
+        padding: 0 400px
+
+    .comfort-info
+      .info
+        width: 80%
+        margin-left: 200px
+
+        h3
+          font-size: 35px
+
+        p
+          margin: 0 40px
+          font-size: 18px
+
+      .img
+        width: 100%
+        height: 500px
+        margin-right: 200px
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
 
 .equipment-container
-	margin: 40px 0
-	.equipment
-		h1
-			margin: 30px 0
-		table
-			margin: auto
-			tr
-				th
-					border-bottom: 1px solid #001E50
-					padding: 5px
-			tr
-				td
-					padding: 10px 5px
+  margin: 40px 0
+
+  .equipment
+    h1
+      margin: 30px 0
+
+    table
+      margin: auto
+
+      tr
+        th
+          border-bottom: 1px solid #001E50
+          padding: 5px
+
+      tr
+        td
+          padding: 10px 5px
+.customise-container
+  .title
+    h1
+      text-align: left
+      font-weight: 600
+  .customise
+    margin: 40px 0
+    .car
+      img
+        width: 100%
+    .properties-container
+      p
+         border-bottom: 1px solid rgba(0, 0, 0, 0.18)
+      h3
+        padding: 5px
+        font-size: 30px
+        font-weight: 600
+      h4
+        padding: 5px
+        font-size: 20px
+        font-weight: 600
+      .radio-style
+        label
+          position: relative
+          input
+            width: 40px
+            height: 35px
+            margin-right: 5px
+        .checkmark
+            width: 40px
+            height: 40px
+            position: absolute
+            top: 0
+            left: 0
+            box-shadow: 0 4px 9px black
+      .forms-style
+        padding: 5px
+        border-bottom: 1px solid rgba(0, 0, 0, 0.18)
+        select
+          border: none
+          font-size: 20px
+          font-weight: 600
+      .save-car
+        border: none
+        background-color: #001E50
+        color: white
+        font-size: 30px
+        font-weight: 600
+        border-radius: 35px
+        padding: 10px 120px
+
 
 
 

@@ -1,0 +1,124 @@
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title Volkswagen
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css")
+		link(rel="stylesheet", href="css/libs.min.css")
+		link(rel="stylesheet", href="css/main.min.css")
+		link(rel="stylesheet", href="css/swiper.min.css")
+
+		script(src="js/libs.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js")
+	body
+		header
+			hr
+			div.container
+				a.toggle-button-menu
+					span.bar-menu
+					span.bar-menu
+					span.bar-menu
+				div.menu.wrapper
+					ul.menuBottom
+						li
+							a.link(href="/") Головна
+						li
+							a.link(href="models.html") Моделі
+						li
+							a.link Конфігуратор
+						li
+							a.link Акції
+						li
+							a.link.B Volkswagen
+
+					div.logo
+						img(src="img/logo.png")
+						p.logo-text Volkswagen
+					
+					ul.menuTop
+						li
+							a.linkAuth SingIn
+						li
+							a.linkAuth Register
+				a.toggle-button-reg
+					span.bar-reg
+					span.bar-reg
+					span.bar-reg
+		div.customise-container
+			div.container
+					div.title
+						h1 Tiguan
+					div.customise.wrapper
+						div.car
+							img(src="img/custom-car.png")
+						div.properties-container
+							p Загальна ціна*:  0,00 UAH
+							p Ціна додаткового обладнання: 0,00 UAH
+							h3 Екстер’єр
+							h4 Колір єкстер’єру
+							form.radio-style
+								label
+									input(type="radio")
+									span.checkmark(style="background-color: white")
+								label
+									input(type="radio")
+									span.checkmark(style="background-color: black")
+								label
+									input(type="radio")
+									span.checkmark(style="background-color: yellow")
+								label
+									input(type="radio")
+									span.checkmark(style="background-color: blue")
+								label
+									input(type="radio")
+									span.checkmark(style="background-color: red")
+								label
+									input(type="radio")
+									span.checkmark(style="background-color: #C2C1C0")
+								label
+									input(type="radio")
+									span.checkmark(style="background-color: #A43303")
+							form.forms-style
+								select
+									option Колеса
+									option R17
+									option R22
+									option R25
+							h3 Технічні характеристики
+							form.forms-style
+								select
+									option Комплектація
+									option Advanced
+									option Basic
+									option Bomj
+							h3 Інтер'єр
+							form.forms-style
+								select
+									option Кольори
+									option Black
+									option Brown
+									option White
+							button.save-car Зберегти
+		footer
+			div.container
+				div.information.wrapper
+					div.info
+						h3 Volkswagen
+						p Моделі
+						p	Новини
+					div.info
+						h3 Сервіс
+						p Конфігуратор
+						p	Підписка на новини
+					div.info
+						h3 Підтримка
+						p	Світ Volkswagen
+						p	Акції
+					div.info
+						h3 Соціальні мережі
+						p Facebook
+						p Instagram	
+				p © 2020 Volkswagen, all rights reserved	
+	script(src="js/rdnavbar.js")
+
